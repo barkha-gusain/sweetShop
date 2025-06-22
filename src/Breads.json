@@ -1,0 +1,23 @@
+ [
+  {
+    "id": 1,
+    "name": "Guilt Free",
+    "image": "/s1.jpg",
+   
+    "description": "Naturally fermented with a crisp crust and tangy flavor."
+  },
+  {
+    "id": 2,
+    "name": "Sweets",
+    "image": "/s2.jpg",
+ 
+    "description": "Loaded with seeds and grains for a healthy bite."
+  },
+  {
+    "id": 3,
+    "name": "Khara Products",
+    "image": "/s7.avif",
+    
+    "description": "Classic French-style bread with a golden crust."
+  }
+]
