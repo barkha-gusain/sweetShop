@@ -46,7 +46,7 @@ body {
   color: black;
   font-size: 1.1vw;
   font-weight: 500;
-  transition: color 0.3s ease;
+  /* transition: color 0.3s ease; */
 }
 .navbar-links li a:hover {
   color: #d57f3a;
@@ -60,7 +60,6 @@ body {
   font-size: 2vw;
   cursor: pointer;
   color: black;
-  transition: all 0.3s ease;
 }
 .icon:hover {
   color: #e91e63;
@@ -180,7 +179,6 @@ body {
   margin-top: 0.5rem;
   margin-top: 2rem;
   display: inline-block;
-  transition: background 0.3s ease;
 }
 .cta-button:hover {
   background-color: #442d26;
@@ -275,10 +273,7 @@ body {
   height: clamp(300px, 60vh, 440px);
   border-radius: 18px;
   padding: 8px;
-  /* background-color: #fff; */
-  /* background-color: #442d26; */
-  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
 }
 
 .cake-card:hover {
@@ -292,7 +287,6 @@ body {
   height: 80%;
   object-fit: cover;
   border-radius: 14px;
-  transition: transform 0.3s ease;
 }
 
 /* ---------- Cake Details ---------- */
@@ -417,6 +411,7 @@ body {
    height: 15vh;
   width: 100%;
     margin-bottom: 1rem  }
+
   .teda-main {
     padding: 0.5rem;
   }
@@ -554,7 +549,7 @@ body {
   border-radius: 18px;
   padding: 8px;
   text-align: left;
-  transition: transform 0.3s ease;
+  /* transition: transform 0.3s ease; */
   /* background-color: rgb(62, 8, 8); */
 }
 
@@ -668,7 +663,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: black;
+  background-color: rgb(31, 30, 30);
+  /* opacity: 0.2; */
   border-radius: 3rem;
   padding: 2rem;
   overflow: hidden;
@@ -738,7 +734,6 @@ body {
   font-weight: 800;
   border-radius: 0.5rem;
   text-decoration: none;
-  transition: background 0.3s ease;
   width: fit-content;
 }
 
@@ -872,7 +867,6 @@ body {
   border-radius: 12px;
   background-color: #f9f9f9;
   gap: 2rem;
-  transition: all 0.3s ease-in-out;
 }
 
 /* -------- Left Text Section -------- */
@@ -1027,7 +1021,6 @@ body {
   border-radius: 8px;
   font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
 
 .email-subscribe button:hover {

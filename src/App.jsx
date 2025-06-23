@@ -1,4 +1,4 @@
-import React from 'react'
+
 import './index.css'
 import { IoIosSearch } from "react-icons/io";
 import { VscAccount } from "react-icons/vsc";
@@ -6,21 +6,124 @@ import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { GiWrappedSweet } from "react-icons/gi";
 import breads from "./Breads.json";
 import sweet from './sweet.json'
+import gsap from "gsap";
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from 'gsap/all';
+gsap.registerPlugin(ScrollTrigger);
 
 const App = () => {
+useGSAP(() => {
+  const tl = gsap.timeline();
+
+  // Navbar entrance
+  tl.from("nav", { y: -100, opacity: 0, duration: 1, delay: 0.2 })
+    .from(".navbar-links li", { y: -20, opacity: 0, stagger: 0.2 }, "-=0.5")
+    .to(".navbar-icons", { scale: 1.1, duration: 0.5, repeat: 1, yoyo: true });
+
+  // Hero section
+  gsap.from(".home-content", {
+    x: -100,
+    opacity: 0,
+    delay: 0.5,
+    duration: 1.5,
+  });
+
+  // Cake grid animation
+  gsap.from(".cake-section", {
+    scrollTrigger: {
+      trigger: ".cake-grid",
+      start: "top 80%",
+      toggleActions: "play none none none",
+      // markers: true,
+    },
+    y: 100,
+    opacity: 0,
+    duration: 1.5,
+  });
+
+  // Main collection section
+  gsap.from(".main", {
+    scrollTrigger: {
+      trigger: ".main1",
+      start: "top 80%",
+    },
+    y: 100,
+    opacity: 0,
+    duration: 1.5,
+  });
+
+  // Teda Section
+  gsap.from(".teda-main", {
+    scrollTrigger: {
+      trigger: ".teda-main",
+      start: "top 80%",
+    },
+    y: 100,
+    opacity: 0,
+    duration: 1.5,
+  });
+
+
+    gsap.from(".cake-card-2", {
+  scrollTrigger: {
+    trigger: ".cake-section-2",
+    start: "top 30%",
+  },
+  y: 100,
+  opacity: 0,
+  duration: 2,
+  stagger: 0.5,
+});
+  // home-section-2 animation
+  gsap.from(".home-section-2", {
+    scrollTrigger: {
+      trigger: ".home-content-2",
+      start: "top 80%",
+    },
+    y: 100,
+    opacity: 0,
+    duration: 1.5,
+  });
+
+
+  // success story section
+  gsap.from(".content-box", {
+    scrollTrigger: {
+      trigger: ".wrapper",
+      start: "top 80%",
+    },
+    y: 100,
+    opacity: 0,
+    duration: 1.5,
+  });
+
+  // footer
+  gsap.from(".footer", {
+    scrollTrigger: {
+      trigger: ".footer",
+      start: "top 90%",
+    },
+    y: 50,
+    opacity: 0,
+    duration: 1.5,
+  });
+
+});
+
+ 
   return (
    <>
 <nav className="navbar">
         {/* Left: Logo */}
         
-        <div className="navbar-logo">
+        <div className="navbar-logo" >
         <span><GiWrappedSweet  className='icon-1'/></span>daizee swts</div>
           <button class="navbar-toggle" onclick="document.getElementById('navbar').classList.toggle('open')">
     ☰
   </button>
 
         {/* Center: Links */}
-        <ul className="navbar-links">
+        <ul className="navbar-links" >
           <li>
             <a href="#home">shop all</a>
           </li>
@@ -42,7 +145,7 @@ const App = () => {
         </ul>
 
         {/* Right: Icons */}
-        <div className="navbar-icons">
+        <div className="navbar-icons" >
           <IoIosSearch className="icon" />
 
           
