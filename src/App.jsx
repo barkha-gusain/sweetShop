@@ -147,7 +147,7 @@ const App = () => {
        <section className='home-2'>
         <div className="home-section-2">
         <div className="home-content-2">
-          <h1>let's <br />explore<span><h1>unique</h1></span> sweets. </h1>
+          <h1>let's <br />explore <br /><span><h1>unique</h1></span><br /> sweets. </h1>
           <p>
            Embrace the world of trendsetting <br /> and cutting-edge fashion.
           </p>
