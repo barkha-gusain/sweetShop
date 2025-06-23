@@ -905,7 +905,8 @@ border-radius: 2rem;
 /* Main container */
 .content-box {
   width: 100%; 
-   height: 50vh;
+   height: 100vh;
+   padding: 2rem 2rem;
   display: flex;
   flex-direction: row;
   align-items: center;
