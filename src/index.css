@@ -580,9 +580,10 @@ body {
 }
 
 /* ---------- Responsive Styles ---------- */
-@media (max-width: 768px) {
+@media (max-width: 876px) {
   .cake-grid-2 {
     gap: 1vw;
+    /* width: 20%; */
     /* background: #2e1e12; */
   }
 .cake-section-2 {
@@ -601,8 +602,10 @@ body {
 
 
   .cake-card-2 {
+   
    width: clamp(250px, 20vw, 350px);
    height: clamp(300px, 50vh, 450px);
+   /* margin: 5rem auto; */
 
   }
 
@@ -620,12 +623,13 @@ body {
     text-align: left;
   }
 }
-@media (max-width: 450px){
+@media (max-width: 500px){
 .cake-grid-2 {
     gap: 1vw;
   }
 
   .cake-card-2 {
+    margin-bottom: 1rem;
     width: 90%;
     height: 50%;
   }
@@ -692,6 +696,8 @@ body {
   justify-content: center;
   text-align: left;
   padding: 0.5rem 3rem;
+  
+  background-color: #e91e63;
 }
 
 .home-content-2 span {
@@ -788,19 +794,32 @@ body {
 }
 
 /* ---------- Responsive Styles ---------- */
-@media (max-width: 1024px) {
+@media (max-width: 786px) {
+  /* .home-2{
+    margin-top: 2rem;
+  } */
   .home-section-2 {
     flex-direction: column;
     text-align: center;
   }
 
-  .home-content-2, .home-div {
+  .home-content-2{
     width: 100%;
+    /* padding: 2rem 3rem; */
+    text-align: center;
+    /* flex-direction: row; */
   }
-
+.cta-button-2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin-left: 3rem;
+}
   .home-div {
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
     gap: 1rem;
     padding: 1rem 0;
   }
@@ -815,7 +834,7 @@ body {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .home-2 {
     height: auto;
     margin: 2rem 1rem;
